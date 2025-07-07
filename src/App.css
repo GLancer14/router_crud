@@ -1,0 +1,438 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  text-align: center;
+  
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  color: rgb(98, 98, 255);
+}
+
+.main {
+  width: 600px;
+}
+
+.main_actions {
+  padding: 10px;
+
+  text-align: right;
+
+  background-color: white;
+}
+
+.main_create-post {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(98, 98, 255);
+  color: white;
+}
+
+.main_create-post:hover {
+  color: white;
+}
+
+/* Posts cards */
+
+.main_posts {
+  margin-top: 10px;
+
+  background-color: rgb(209, 209, 209);
+  color: black;
+}
+
+.post-card {
+  padding: 10px;
+  margin-top: 10px;
+
+  background-color: white;
+}
+
+.post-card_header {
+  display: flex;
+  gap: 10px;
+}
+
+.post-card_authors-data {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.post-card_author {
+  width: 100%;
+  
+  text-align: left;
+}
+
+.post-card_content {
+  margin-top: 10px;
+
+  font-size: 24px;
+  text-align: left;
+}
+
+.post-card_actions {
+  padding: 5px 0px;
+  margin: 10px 0px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.post-card_like-btn {
+  width: 50%;
+
+  background-color: white;
+  color: black;
+}
+
+.post-card_comment-btn {
+  width: 50%;
+
+  background-color: white;
+  color: black;
+}
+
+.post-card_like-btn:hover {
+  color: blue;
+  outline: none;
+}
+.post-card_comment-btn:hover {
+  color: blue;
+  outline: none;
+}
+
+.post-card_avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25px;
+  
+  object-fit: cover;
+}
+
+.post-card_write-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.write-comment_avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+.write-comment_input-text {
+  width: calc(100% - 50px);
+  height: 40px;
+  padding: 10px;
+
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 20px;
+  color: black;
+}
+
+/* Post edit headers */
+
+.post-edit-form_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-edit-form_types {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: 40px;
+  padding: 5px;
+}
+
+.post-edit-form_types_items {
+  width: calc(100% / 4);
+
+  text-align: left;
+}
+
+.post-edit-form_close {
+  width: 40px;
+}
+
+/* Post creation */
+
+.post-creation-form {
+  width: 600px;
+  padding: 10px;
+
+  background-color: white;
+}
+
+.post-creation-form_content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0px;
+  margin: 10px 0px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.post-creation-form_avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+}
+
+.post-creation-form_input-content {
+  flex-grow: 1;
+  align-self: flex-start;
+  min-height: 50px;
+
+  background-color: white;
+  color: black;
+  resize: none;
+}
+
+.post-creation-form_submit {
+  width: 150px;
+  height: 30px;
+  padding: 2px;
+  margin-left: 430px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(98, 98, 255);
+  color: white;
+}
+
+.post-creation-form_avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+}
+
+/* Post page */
+
+.post-page {
+  width: 600px;
+
+  padding: 10px;
+  margin-top: 10px;
+
+  background-color: white;
+}
+
+.post-page_header {
+  display: flex;
+  gap: 10px;
+}
+
+.post-page_avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+}
+
+.post-page_authors-data {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.post-page_author {
+  width: 100%;
+  
+  text-align: left;
+}
+
+.post-page_content {
+  margin-top: 10px;
+
+  font-size: 24px;
+  text-align: left;
+}
+
+.post-page_actions {
+  padding: 5px 0px;
+  margin: 10px 0px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.post-page_actions_like-btn {
+  width: 50%;
+
+  background-color: white;
+  color: black;
+}
+
+.post-page_actions_comment-btn {
+  width: 50%;
+
+  background-color: white;
+  color: black;
+}
+
+.post-page_actions_like-btn:hover {
+  color: blue;
+  outline: none;
+}
+.post-page_actions_comment-btn:hover {
+  color: blue;
+  outline: none;
+}
+
+.post-page_footer-buttons-wrp {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.post-page_actions_change {
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(98, 98, 255);
+  color: white;
+}
+
+.post-page_actions_delete {
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(255, 98, 98);
+  color: white;
+}
+
+/* Post edit */
+
+.post-edit-form {
+  width: 600px;
+  padding: 10px;
+
+  background-color: white;
+}
+
+.post-edit-form_content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0px;
+  margin: 10px 0px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.post-edit-form_avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+}
+
+.post-edit-form_input-content {
+  flex-grow: 1;
+  align-self: flex-start;
+  min-height: 50px;
+
+  background-color: white;
+  color: black;
+
+  resize: none;
+}
+
+.post-edit-form_attachment-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.post-edit-form_attachment-item {
+  width: calc(50% - 10px);
+  height: 40px;
+  padding: 5px 5px 5px 30px;
+
+  text-align: left;
+
+  background-color: rgb(243, 243, 243); 
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 20px;
+}
+
+.post-edit-form_submit {
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  margin-left: 480px;
+  margin-top: 10px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(98, 98, 255);
+  color: white;
+}
