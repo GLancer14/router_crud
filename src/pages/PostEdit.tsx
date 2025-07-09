@@ -18,6 +18,8 @@ export default function PostEdit() {
         id: id,
         content: content,
       })
+    }).catch(e => {
+      console.log(e);
     });
 
     navigate("/");
@@ -28,6 +30,8 @@ export default function PostEdit() {
       .then(res => res.json())
       .then(postData => {
         return setContent(postData.post.content);
+      }).catch(e => {
+        console.log(e);
       });
   }, []);
 

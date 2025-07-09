@@ -17,6 +17,8 @@ export default function PostCreationPage() {
         id: 0,
         content: content,
       }),
+    }).catch(e => {
+      console.log(e);
     });
 
     navigate("/");

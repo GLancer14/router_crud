@@ -20,6 +20,8 @@ export default function PostPage() {
       headers: {
         "Content-Type": "application/json",
       },
+    }).catch(e => {
+      console.log(e);
     });
 
     navigate("/");
@@ -30,6 +32,8 @@ export default function PostPage() {
       .then(res => res.json())
       .then(postData => {
         return setPost(postData.post);
+      }).catch(e => {
+        console.log(e);
       });
   }, []);
 
